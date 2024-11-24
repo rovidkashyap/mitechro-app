@@ -1,0 +1,65 @@
+/* Contact Section Styling */
+.contact-section {
+    padding: 50px 20px;
+    background: #f9fafc; /* Light blue background */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 20px; /* Space between cards */
+  }
+  
+  .contact-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #e0e0e0; /* Subtle border */
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Responsive three-column layout */
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-icon {
+    font-size: 40px;
+    color: #007bff; /* Blue for icons */
+    margin-bottom: 10px;
+  }
+  
+  .contact-info h3 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: camel-case;
+    color: #333; /* Darker text */
+    margin-bottom: 5px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #007bff; /* Blue text for emphasis */
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-card {
+      width: 100%; /* Full-width cards on smaller screens */
+    }
+  }

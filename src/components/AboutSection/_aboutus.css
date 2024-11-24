@@ -1,0 +1,134 @@
+/* About Us Section */
+.aboutus-section {
+    display: flex;
+    flex-direction: column; /* Default stacking layout */
+    align-items: center;
+    padding: 50px 40px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .aboutus-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Space between image and content */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .aboutus-image-wrapper {
+    flex: 1;
+    text-align: center; /* Center-align image */
+  }
+  
+  .aboutus-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the image */
+  }
+  
+  .aboutus-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left; /* Left-align text */
+  }
+  
+  .aboutus-heading {
+    font-size: 20px;
+    text-transform:camel-case;
+    color: #0056b3;
+    margin-bottom: 25px;
+  }
+  
+  .aboutus-subheading {
+    font-size: 28px;
+    font-family:'Helvetica';
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .aboutus-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color:#aaa;
+  }
+  
+  .aboutus-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .feature-item {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; /* Space between icon and text */
+  }
+  
+  .feature-icon {
+    font-size: 30px;
+  }
+  
+  .feature-text {
+    font-size: 16px;
+    color: #333;
+  }
+
+  .feature-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+    padding: 10px;
+  }
+  
+  .discover-btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .discover-btn:hover {
+    background-color: #00409f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .aboutus-container {
+      flex-direction: column; /* Stack image and content vertically */
+
+    }
+  
+    .aboutus-image-wrapper, .aboutus-content {
+      max-width: 100%; /* Full width for smaller screens */
+      text-align: center;
+    }
+  
+    .aboutus-features {
+        grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .feature-item {
+      justify-content: center; /* Icons stack on top of text */
+    }
+  
+    .discover-btn {
+      width: 100%; /* Full-width button */
+    }
+  }

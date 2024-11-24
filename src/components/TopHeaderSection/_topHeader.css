@@ -1,0 +1,64 @@
+.th_head{
+    margin:0;
+    padding:0;
+    height:45px;
+    width:100%;
+    background: linear-gradient(45deg, #0C59DB 50%, #021533 50%);
+}
+
+.text_section {
+    padding: 5px 10px;
+}
+
+.text_section p {
+    color:white;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.text_section a {
+    color: white;
+    margin-right: 0px;
+    transition: transform 0.3s ease;
+}
+
+.text_section a:hover {
+    transform: scale(1.2);
+    color: #f4a261;
+}
+
+.text_section svg {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.text_section svg:hover {
+    fill: #f4a261;
+}
+
+.email-link {
+    color:white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .th_head {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .text_section {
+        margin: 5px 0;
+    }
+}
